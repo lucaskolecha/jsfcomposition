@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <h:outputStylesheet library="webjars" name="bootstrap/4.1.3/dist/css/bootstrap.min.css" />
+        <h:outputStylesheet library="webjars" name="font-awesome/4.7.0/css/font-awesome.min.css" />        
+        <h:outputStylesheet name="css/style.css" />
+        <title>
+            <ui:insert name="title">JsfComposition</ui:insert>
+        </title>
+    </h:head>
+    <h:body>
+
+        <ui:include src="./header.xhtml" />
+        <br/>            
+        <br/>
+        <div class="container">
+            <ui:insert name="content" />
+        </div>
+        <ui:include src="./footer.xhtml" />
+
+        <h:outputScript library="webjars" name="jquery/3.3.1/dist/jquery.slim.min.js" />
+        <h:outputScript library="webjars" name="popper.js/1.14.3/dist/umd/popper.min.js" />
+        <h:outputScript library="webjars" name="bootstrap/4.1.3/dist/js/bootstrap.min.js" />
+    </h:body>
+</html>
+

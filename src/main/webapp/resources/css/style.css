@@ -13,4 +13,21 @@ footer {
     width: 100%;
     bottom: 0;
     position: fixed;
+    text-align: center;
+    background-color: #383c42;
+    padding: 16px;
+}
+
+#menu {
+    background-color: #3b3e44;
+    padding: 10px 0;
+}
+
+#menu tr td a {
+    color: #fff !important;
+    padding: 0 20px;
+}
+
+footer > div > span {
+    color: #fff;
 }
